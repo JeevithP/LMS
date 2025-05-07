@@ -1,0 +1,35 @@
+# Node modules
+node_modules/
+client/node_modules/
+server/node_modules/
+
+# Build & cache folders
+dist/
+build/
+.cache/
+
+# Env files
+.env
+client/.env
+server/.env
+
+# Vite output
+client/dist/
+
+# Logs
+*.log
+logs/
+
+# OS files
+.DS_Store
+
+# Editor configs
+.vscode/
+.idea/
+
+# Videos, images (optional if large)
+*.mp4
+*.png
+*.jpg
+
+server/uploads
