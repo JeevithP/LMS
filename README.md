@@ -37,15 +37,16 @@ A full-stack Learning Management System (LMS) built using the MERN stack. It all
 
 ## 📁 Folder Structure
 
+```bash
 LMS/
 ├── client/
-│ └── vite/ # React frontend (Vite-based)
+│   └── vite/                # React frontend (Vite-based)
 ├── server/
-│ ├── controllers/ # Request handlers
-│ ├── models/ # Mongoose schemas
-│ ├── routes/ # Express routes
-│ ├── utils/ # Helper functions
-│ └── index.js # Server entry point
+│   ├── controllers/         # Request handlers
+│   ├── models/              # Mongoose schemas
+│   ├── routes/              # Express routes
+│   ├── utils/               # Helper functions
+│   └── index.js             # Server entry point
 └── README.md
 
 
