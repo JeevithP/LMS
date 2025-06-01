@@ -54,47 +54,45 @@ LMS/
 
 ## ⚙️ Setup Instructions
 
+### Prerequisites
+
+- Node.js and npm installed  
+- MongoDB running locally or Atlas DB URI  
+- Cloudinary account for video/image uploads  
+
+---
+
 ### 1. Clone the repository
 
-```bash
-git clone https://github.com/JeevithP/LMS.git
-cd LMS
+`git clone https://github.com/JeevithP/LMS.git`  
+`cd LMS`
 
-2. Setup Backend
-bash
-Copy
-Edit
-cd server
-npm install
-Create a .env file inside /server:
+---
 
-env
-Copy
-Edit
-PORT=5000
-MONGODB_URI=your_mongodb_uri
-JWT_SECRET=your_secret_key
-Start the backend:
+### 2. Server Setup
 
-bash
-Copy
-Edit
-npm start
-3. Setup Frontend
-bash
-Copy
-Edit
-cd client/vite
-npm install
-npm run dev
-Frontend will run on http://localhost:5173
+- Navigate to the server folder  
+- Run `npm install`  
+- Create a `.env` file in the server directory with the following:
 
-🌐 Environment Variables
-Add a .env file inside server/ directory with the following keys:
+PORT=5000  
+MONGODB_URI=your_mongodb_connection_string  
+JWT_SECRET=your_jwt_secret  
+CLOUDINARY_CLOUD_NAME=your_cloud_name  
+CLOUDINARY_API_KEY=your_api_key  
+CLOUDINARY_API_SECRET=your_api_secret  
 
-env
-Copy
-Edit
-PORT=5000
-MONGODB_URI=<your_mongodb_connection_string>
-JWT_SECRET=<your_jwt_secret>
+Start the server with: `npm run dev`
+
+---
+
+### 3. Client Setup
+
+- Navigate to `client/vite`  
+- Run `npm install`  
+- Optionally, create a `.env` file in `client/vite`:
+
+VITE_API_URL=http://localhost:5000
+
+Start the client with: `npm run dev`  
+The frontend runs on `http://localhost:5173`
